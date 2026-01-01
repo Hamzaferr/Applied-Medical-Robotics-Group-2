@@ -6,7 +6,7 @@ Combines:
 - New serial_reader thread (no more graph freezing)
 - Trajectory batch sending for smooth motion
 
-Author: Yagmur
+Author: Hamza
 Date: December 2025
 """
 
