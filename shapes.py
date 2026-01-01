@@ -1,4 +1,5 @@
 """
+Author:Hamza
 Shape Trajectory Generator for 2-Link Robot Arm
 
 Generates time-stamped trajectories for Arduino batch upload.
@@ -438,4 +439,5 @@ if __name__ == "__main__":
     print(f"Effective speed: {result['path_length'] / (result['total_time_ms']/1000):.1f} cm/s")
     
     print("\n" + "=" * 60)
+
     print("Done!")
