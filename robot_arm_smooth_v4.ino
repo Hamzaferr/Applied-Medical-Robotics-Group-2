@@ -1,27 +1,5 @@
 /*
-   2-Link Robot Arm - SMOOTH VERSION V4 (Corrected Feedforward)
-   
-   Changes from v3:
-   - FIXED: Feedforward sign (was wrong! now uses - Kv * velocity)
-   - NEW: Low-pass filter on feedforward to prevent segment jumps
-   - NEW: Smoothstep interpolation (cubic blend) for smoother motion
-   
-   Changes from v2:
-   - Added velocity feedforward
-   
-   Changes from v1:
-   - Removed integral reset during trajectory playback
-   
-   WHY THE SIGN FIX MATTERS:
-   Our error = current - demand
-   - Positive error → motor reduces position
-   - Negative error → motor increases position
-   
-   So when desiredVelocity > 0 (demand increasing):
-   - We want motor to INCREASE position
-   - That needs NEGATIVE output contribution
-   - Therefore: output += (-Kv) * desiredVelocity
-   
+   Author: Hamza
    Commands:
      theta1,theta2  - Direct angle command
      B,n            - Begin batch of n points  
@@ -31,7 +9,6 @@
      S              - Stop immediately
      ?              - Query status
    
-   Author: Yagmur
    Date: December 2025
 */
 
