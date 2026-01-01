@@ -1,4 +1,5 @@
 """
+Author:Hamza
 Serial Reader Thread for Robot Arm Controller
 
 This module provides a dedicated thread that:
