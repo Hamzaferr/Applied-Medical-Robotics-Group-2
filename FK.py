@@ -1,30 +1,9 @@
 import numpy as np
 
-# DON'T import plotting functions at the top level!
-# from workspace_plotter import plot_workspace, plot_robot_configuration  ❌
 
 
 def forward_kinematics(r1, r2, theta1, theta2):
-    """
-    Calculate end-effector position and orientation for a 2-link planar robot.
-    
-    Parameters:
-    -----------
-    r1 : float
-        Length of link 1 (first link) in cm
-    r2 : float
-        Length of link 2 (second link) in cm
-    theta1 : float
-        Joint 1 angle in DEGREES (Motor A - EMG30)
-    theta2 : float
-        Joint 2 angle in DEGREES (Motor B - Pololu)
-    
-    Returns:
-    --------
-    T : numpy.ndarray (4x4)
-        Homogeneous transformation matrix from base frame to end-effector
-        T[0:2, 3] contains [x, y] position of end-effector
-    """
+    # Calculate end-effector position and orientation for a 2-link planar robot.
     
     # θ1=0° means robot pointing UP (+Y direction toward paper)
     # Standard math: 0° is +X, so we add 90° to make 0° point to +Y
