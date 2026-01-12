@@ -1,5 +1,5 @@
 # Applied Medical Robotics – Group 2
-Benchtop 2-link planar robot arm + Dash GUI + Arduino PID control, developed as a proxy for automated dermatological laser probe scanning.
+Benchtop 2-link planar robot arm + Dash GUI + Arduino PID control
 
 ## Repository contents (high level)
 This repo contains:
@@ -63,5 +63,4 @@ These scripts were created specifically for the standalone PID step-response exp
    - Launch `arduino_gui.py` and use the interface to compute IK and send trajectories.
 
 ## Notes
-- The project is a **benchtop proof-of-concept** and does not include laser hardware.
 - The paper workspace is 12 × 12 cm with a paper-to-robot coordinate mapping defined in the report.
